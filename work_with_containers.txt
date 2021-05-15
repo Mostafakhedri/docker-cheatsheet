@@ -1,0 +1,16 @@
+1-docker run -it --name nginx alpine
+
+2-apk add nginx
+
+3-stop the container and type docker commit nginx alpine:nginx
+
+4-docker run -d --name redis redis > myredis.cid
+
+5-docker run -d --name nginx  --memory=512m --memory-swap=768m --cpus=1 --cpuset-cpus=0 nginx
+
+6-docker run --name alpine -e CLASS=dws -e NAME=mostafakhedri -d alpine sleep 4800 
+
+7-docker exec alpine env   CLASS=dws  NAME=mostafakhedri
+
+8-docker run --name alpine -v /tmp:/data --workdir /data  -d alpine sleep 4800
+
